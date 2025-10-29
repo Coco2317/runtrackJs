@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Good to see you again</h1>
+
+      <form id="loginForm" novalidate>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <small class="error"></small>
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" required minlength="8" />
+        <small class="error"></small>
+
+        <button type="submit">Se connecter</button>
+
+        <p>
+          Pas encore inscrit ?
+          <a href="inscription.html">Créer un compte</a>
+        </p>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
