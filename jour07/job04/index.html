@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job 04 - Formulaire Materialize Moderne</title>
+
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols modernes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grey lighten-5">
+    <!-- HEADER -->
+    <header>
+      <nav class="deep-purple">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">NC</a>
+
+          <!-- Icône du menu mobile -->
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+            <span class="material-symbols-outlined">menu</span>
+          </a>
+
+          <!-- Menu Desktop -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
+            <li><a href="#">Rechercher</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <ul class="sidenav" id="mobile-menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Inscription</a></li>
+        <li><a href="#">Connexion</a></li>
+        <li><a href="#">Rechercher</a></li>
+      </ul>
+    </header>
+
+    <!-- FORMULAIRE -->
+    <main class="container section">
+      <h4 class="center-align">Créer un compte</h4>
+
+      <form id="registerForm" class="card-panel white z-depth-2">
+        <!-- Civilité -->
+        <p><strong>Civilité :</strong></p>
+        <p>
+          <label
+            ><input name="civility" type="radio" value="Mme" required /><span
+              >Mme</span
+            ></label
+          >
+        </p>
+        <p>
+          <label
+            ><input name="civility" type="radio" value="M." /><span
+              >M.</span
+            ></label
+          >
+        </p>
+
+        <!-- Prénom -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">person</span>
+          <input
+            id="prenom"
+            name="prenom"
+            type="text"
+            class="validate"
+            required
+            minlength="2"
+            maxlength="50"
+          />
+          <label for="prenom">Prénom</label>
+          <span class="helper-text" data-error="Format invalide"></span>
+        </div>
+
+        <!-- Nom -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">badge</span>
+          <input
+            id="nom"
+            name="nom"
+            type="text"
+            class="validate"
+            required
+            minlength="2"
+            maxlength="50"
+          />
+          <label for="nom">Nom</label>
+          <span class="helper-text" data-error="Format invalide"></span>
+        </div>
+
+        <!-- Adresse -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">home</span>
+          <input
+            id="adresse"
+            name="adresse"
+            type="text"
+            class="validate"
+            required
+            maxlength="100"
+          />
+          <label for="adresse">Adresse</label>
+          <span class="helper-text"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">mail</span>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="validate"
+            required
+          />
+          <label for="email">Adresse email</label>
+          <span
+            class="helper-text"
+            data-error="Format d’email non valide"
+          ></span>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">lock</span>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            class="validate"
+            required
+            minlength="8"
+          />
+          <label for="password">Mot de passe</label>
+          <span
+            class="helper-text"
+            data-error="8 caractères min, maj, min, caractère spécial requis"
+          ></span>
+        </div>
+
+        <!-- Confirmation mot de passe -->
+        <div class="input-field">
+          <span class="material-symbols-outlined prefix">lock_reset</span>
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            class="validate"
+            required
+          />
+          <label for="confirmPassword">Confirmer le mot de passe</label>
+          <span
+            class="helper-text"
+            data-error="Les mots de passe ne correspondent pas"
+          ></span>
+        </div>
+
+        <!-- Passions -->
+        <p><strong>Passions :</strong></p>
+        <p>
+          <label
+            ><input
+              type="checkbox"
+              name="passions[]"
+              value="Informatique"
+            /><span>Informatique</span></label
+          >
+        </p>
+        <p>
+          <label
+            ><input type="checkbox" name="passions[]" value="Voyages" /><span
+              >Voyages</span
+            ></label
+          >
+        </p>
+        <p>
+          <label
+            ><input type="checkbox" name="passions[]" value="Sport" /><span
+              >Sport</span
+            ></label
+          >
+        </p>
+        <p>
+          <label
+            ><input type="checkbox" name="passions[]" value="Lecture" /><span
+              >Lecture</span
+            ></label
+          >
+        </p>
+
+        <!-- Bouton moderne -->
+        <div class="center-align">
+          <button
+            type="submit"
+            class="btn deep-purple waves-effect waves-light"
+          >
+            <i class="material-icons left">send</i> VALIDER
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer deep-purple">
+      <div class="container center-align">
+        <ul>
+          <li><a class="white-text" href="#">Accueil</a></li>
+          <li><a class="white-text" href="#">Inscription</a></li>
+          <li><a class="white-text" href="#">Connexion</a></li>
+          <li><a class="white-text" href="#">Rechercher</a></li>
+        </ul>
+        <p class="white-text">© 2025 - Formulaire Materialize Moderne</p>
+      </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Initialisation du menu mobile -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elems = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(elems);
+      });
+    </script>
+
+    <!-- VALIDATION LIVE -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("registerForm");
+        const prenom = document.getElementById("prenom");
+        const nom = document.getElementById("nom");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+        const passions = document.querySelectorAll('input[name="passions[]"]');
+
+        const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,50}$/;
+        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        const passwordRegex =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=\[{\]};:'",<.>/?\\|`~]).{8,}$/;
+
+        function setError(input, message) {
+          const helper = input.parentElement.querySelector(".helper-text");
+          input.classList.add("invalid");
+          input.classList.remove("valid");
+          if (helper) {
+            helper.textContent = message;
+            helper.style.color = "#f44336";
+          }
+        }
+
+        function setSuccess(input, message) {
+          const helper = input.parentElement.querySelector(".helper-text");
+          input.classList.add("valid");
+          input.classList.remove("invalid");
+          if (helper) {
+            helper.textContent = message || "";
+            helper.style.color = "#4caf50";
+          }
+        }
+
+        confirmPassword.disabled = true;
+
+        prenom.addEventListener("input", () => {
+          if (!nameRegex.test(prenom.value.trim()))
+            setError(prenom, "Format invalide");
+          else setSuccess(prenom, "");
+        });
+
+        nom.addEventListener("input", () => {
+          if (!nameRegex.test(nom.value.trim()))
+            setError(nom, "Format invalide");
+          else setSuccess(nom, "");
+        });
+
+        email.addEventListener("input", () => {
+          if (!emailRegex.test(email.value.trim()))
+            setError(email, "Format d’email non valide");
+          else setSuccess(email, "");
+        });
+
+        password.addEventListener("input", () => {
+          const helper = password.parentElement.querySelector(".helper-text");
+          helper.textContent =
+            "8 caractères min, maj, min, caractère spécial requis";
+
+          if (!passwordRegex.test(password.value)) {
+            setError(
+              password,
+              "8 caractères min, maj, min, caractère spécial requis"
+            );
+            confirmPassword.value = "";
+            confirmPassword.disabled = true;
+            helper.style.color = "#f44336";
+          } else {
+            setSuccess(password, "Mot de passe valide");
+            confirmPassword.disabled = false;
+          }
+        });
+
+        confirmPassword.addEventListener("input", () => {
+          if (confirmPassword.value !== password.value)
+            setError(confirmPassword, "Les mots de passe ne correspondent pas");
+          else setSuccess(confirmPassword, "");
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let passionChecked = Array.from(passions).some((p) => p.checked);
+
+          if (!passionChecked) {
+            M.toast({
+              html: "Veuillez cocher au moins une passion.",
+              classes: "red",
+              displayLength: 4000,
+            });
+            return;
+          }
+
+          if (
+            nameRegex.test(prenom.value.trim()) &&
+            nameRegex.test(nom.value.trim()) &&
+            emailRegex.test(email.value.trim()) &&
+            passwordRegex.test(password.value) &&
+            confirmPassword.value === password.value &&
+            passionChecked
+          ) {
+            form.innerHTML = `
+          <div class="center-align" style="padding:60px 0;">
+            <span class="material-symbols-outlined" style="font-size:64px;color:#2e7d32;">check_circle</span>
+            <p style="color:#2e7d32;font-size:1.5rem;font-weight:500;margin-top:10px;">
+              Formulaire envoyé avec succès !
+            </p>
+          </div>
+        `;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
