@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job 02 - Header Materialize Responsive</title>
+
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grey lighten-5">
+    <!-- HEADER -->
+    <header>
+      <nav class="deep-purple">
+        <div class="nav-wrapper container">
+          <!-- Logo -->
+          <a href="#" class="brand-logo">NC</a>
+
+          <!-- Icône du menu mobile -->
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+            <i class="material-icons">menu</i>
+          </a>
+
+          <!-- Menu Desktop -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
+            <li><a href="#">Rechercher</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <ul class="sidenav" id="mobile-menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Inscription</a></li>
+        <li><a href="#">Connexion</a></li>
+        <li><a href="#">Rechercher</a></li>
+      </ul>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="container section center-align">
+      <h4>Job 02 - Header Responsive Materialize</h4>
+      <p>
+        Consigne : ajouter des classes materialize à votre header de sorte qu'il
+        soit coloré et aligné.
+      </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer deep-purple">
+      <div class="container center-align">
+        <p class="white-text">© 2025 - Job 02 Materialize Responsive</p>
+      </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // Initialisation du menu mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        const elems = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
