@@ -1,0 +1,97 @@
+/* -------------------------------
+   STYLES GLOBAUX
+---------------------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* -------------------------------
+   FORMULAIRE
+---------------------------------- */
+form {
+  border-radius: 12px;
+  padding: 25px;
+}
+
+/* Bordures vertes/rouges sur validation */
+input.validate.valid {
+  border-bottom: 2px solid #4caf50 !important;
+  box-shadow: none !important;
+}
+
+input.validate.invalid {
+  border-bottom: 2px solid #f44336 !important;
+  box-shadow: none !important;
+}
+
+/* Messages d’aide sous les champs */
+.helper-text {
+  font-size: 0.85rem;
+  color: #f44336 !important;
+}
+
+/* -------------------------------
+   MESSAGE DE SUCCÈS
+---------------------------------- */
+.success-container {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.success-container i {
+  color: #2e7d32; /* Vert foncé Materialize */
+}
+
+.success-container p {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Correction couleur helper-text quand le champ est valide */
+input.valid + label + .helper-text {
+  color: #4caf50 !important; /* vert Materialize */
+}
+
+
+/* -------------------------------
+   FOOTER
+---------------------------------- */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   BOUTON DE VALIDATION
+---------------------------------- */
+button.btn {
+  border-radius: 8px;
+  padding: 0 20px;
+}
+
+/* -------------------------------
+   TITRES & SECTIONS
+---------------------------------- */
+h4.center-align {
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 30px;
+}
