@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Coco – Danse & Mouvement</title>
+
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Polices modernes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icônes Material -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="blue-grey lighten-5">
+    <!-- HEADER -->
+    <nav class="blue-grey lighten-2">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Studio Coco</a>
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Cours</a></li>
+          <li><a href="#">Événements</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Cours</a></li>
+      <li><a href="#">Événements</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- SECTION HERO -->
+       <section class="section no-pad">
+      <div
+        class="hero-image"
+        style="
+          height: 400px;
+          background-image: url('assets/hero.jpg');
+          background-size: cover;
+          background-position: center;
+          position: relative;
+        "
+      >
+        <div
+          class="center-align white-text"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <h4>Exprime-toi à travers le mouvement</h4>
+          <p class="flow-text">
+            Rejoins Studio Coco, l’espace où chaque danse raconte une histoire.
+          </p>
+          <a
+            href="#"
+            class="btn-large blue-grey lighten-2 waves-effect waves-light"
+          >
+            Découvrir nos cours
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COURS -->
+    <main class="container section">
+      <h4 class="center-align">Nos Styles de Danse</h4>
+
+      <div class="row">
+        <!-- LIGNE 1 -->
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img
+                src="https://images.pexels.com/photos/1820147/pexels-photo-1820147.jpeg"
+                alt="Classique"
+                class="responsive-img"
+              />
+              <span class="card-title">Classique</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Découvrez la grâce et la rigueur du ballet, symbole de
+                perfection et d’expression pure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img
+                src="assets/contempo.jpg"
+                alt="Contemporain"
+                class="responsive-img"
+              />
+              <span class="card-title">Contemporain</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Une danse libre et expressive, reliant émotions et
+                improvisation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img
+                src="https://images.pexels.com/photos/1701194/pexels-photo-1701194.jpeg"
+                alt="Jazz"
+                class="responsive-img"
+              />
+              <span class="card-title">Jazz</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Une fusion entre puissance, souplesse et musicalité : laissez
+                votre corps vibrer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIGNE 2 : Salsa + Street Jazz, plus petites -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card small hoverable">
+            <!-- SMALL = vignette réduite -->
+            <div class="card-image">
+              <img src="assets/salsa.jpg" alt="Salsa" class="responsive-img" />
+              <span class="card-title">Salsa</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Rythmes latins, sourires et passion : la danse sociale par
+                excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card small hoverable">
+            <div class="card-image">
+              <img
+                src="assets/streetjazz.jpg"
+                alt="Street Jazz"
+                class="responsive-img"
+              />
+              <span class="card-title">Street Jazz</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Style urbain et contemporain, une danse moderne et audacieuse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue-grey lighten-2">
+      <div class="container">
+        <div class="row center-align">
+          <div class="col s12">
+            <p class="white-text flow-text">
+              “Dance, dance, otherwise you're lost.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elems = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
